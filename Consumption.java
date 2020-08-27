@@ -43,7 +43,7 @@ public class Consumption extends AppCompatActivity {
     String dateFormat;
     ProgressDialog progressDialog;
 
-    private String url = "https://wuxiancorp.com/gas_station/consumption.php";
+    private String url = "https://consumption.php";
     private String TAG = MainActivity.class.getSimpleName();
 
     public void onCreate(Bundle savedInstanceState) {
