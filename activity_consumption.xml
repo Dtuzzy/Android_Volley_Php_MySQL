@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="18dp"
+    android:orientation="vertical"
+    tools:context=".Consumption">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150.0dip"
+                android:layout_height="50.0dip"
+                android:layout_gravity="center"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="30.0dip"
+                android:text="Consumption"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="14.0dip"
+                android:text="Posting Date"
+                android:textSize="15.0sp" />
+
+            <DatePicker
+                android:id="@+id/consumption_datePicker"
+                android:layout_width="283.0dip"
+                android:layout_height="100.0dip"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16.0dip"
+                android:paddingTop="10.0dip"
+                android:paddingBottom="10.0dip"
+                android:text="Station Code"
+                android:textSize="15.0sp" />
+
+            <Spinner
+                android:id="@+id/consumption_spinner"
+                android:layout_width="283.0dip"
+                android:layout_height="30.0dip"
+                android:layout_gravity="center"
+                android:entries="@array/station_codes"
+                android:paddingLeft="1.0dip"
+                android:textSize="20.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16.0dip"
+                android:paddingTop="10.0dip"
+                android:paddingBottom="10.0dip"
+                android:text="Product Type"
+                android:textSize="15.0sp" />
+
+            <Spinner
+                android:id="@+id/consumption_spinner2"
+                android:layout_width="283.0dip"
+                android:layout_height="30.0dip"
+                android:layout_gravity="center"
+                android:entries="@array/product_types"
+                android:paddingLeft="1.0dip"
+                android:textSize="20.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16.0dip"
+                android:paddingTop="10.0dip"
+                android:paddingBottom="10.0dip"
+                android:text="Posting Group"
+                android:textSize="15.0sp" />
+
+            <Spinner
+                android:id="@+id/consumption_spinner3"
+                android:layout_width="283.0dip"
+                android:layout_height="30.0dip"
+                android:layout_gravity="center"
+                android:entries="@array/posting_group"
+                android:paddingLeft="1.0dip"
+                android:textSize="20.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16.0dip"
+                android:paddingTop="10.0dip"
+                android:paddingBottom="10.0dip"
+                android:text="Quantity Consumed"
+                android:textSize="15.0sp" />
+
+            <EditText
+                android:layout_width="283.0dip"
+                android:layout_height="40.0dip"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:inputType="number"
+                android:id="@+id/consumption_qty"
+                android:paddingTop="10.0dip" />
+
+            <Button
+                android:layout_width="250.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30.0dip"
+                android:alpha="0.6"
+                android:background="@drawable/rounded_02"
+                android:id="@+id/consumption_send"
+                android:text="Send Data"
+                android:textAllCaps="false"
+                android:textColor="#ffffffff"
+                android:textSize="20.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
